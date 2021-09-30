@@ -48,19 +48,14 @@ pages:
       content:
         justify: center
         blocks:
-          - id: content_card
-            type: Card
-            style:
-              maxWidth: 800
-            blocks:
-              - id: content
-                type: Result
-                properties:
-                  title: Scatec Procurememnt Register App
-                  subTitle: This is a demo web app, developed for Scatec by Econ Cube
-                  icon:
-                    name: RightCircleOutlined
-                    color: '#f00'
+          - id: content
+            type: Result
+            properties:
+              title: Scatec Procurememnt Register App
+              subTitle: This is a demo web app, developed for Scatec by Econ Cube
+              icon:
+                name: RightCircleOutlined
+                color: '#f00'
           - id: pbi_dash_card
             type: Collapse
             layout:
@@ -71,16 +66,19 @@ pages:
                 - disbaled: false
                   extraKey: content_one_extra
                   key: content_one
-                  title: Analytics Dashboard
+                  title: Shipping Register Dashboard
             areas:
               content_one:
                 blocks:
-                  - id: pbi_dash
-                    type: Html
+                  - id: pbi_dash_shipping
+                    type: DangerousHtml
                     layout:
                       align: middle
                     properties:
-                      html: |
+                      DOMPurifyOptions:
+                        ADD_TAGS:
+                          - iframe
+                      html: |  
                         <iframe 
                           id=""ytplayer_yaml_video"
                           type="text/html"
