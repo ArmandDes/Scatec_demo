@@ -1,0 +1,102 @@
+
+lowdefy: 3.22.0
+name: Lowdefy starter
+
+connections:
+  - id: google_sheet
+    type: GoogleSheet
+    properties:
+      client_email:
+        _secret: SHEETS_CLIENT_EMAIL
+      private_key:
+        _base64.decode:
+          _secret: SHEETS_PRIVATE_KEY
+      sheetIndex: 0
+      spreadsheetId: 1XEyU4w2dRfxmtSKUjN8B-_4lEDlKiNcjFVm2-VVvGxA
+      write: true
+menus:
+  - id: default
+    links:
+      - id: welcome
+        type: MenuLink
+        properties:
+          icon: HomeOutlined
+          title: Home
+        pageId: welcome
+      - id: procurement_register
+        type: MenuLink
+        properties:
+          icon: AlertOutlined
+          title: Procurement Register
+        pageId: procurement_register
+      - id: shipping_register
+        type: MenuLink
+        properties:
+          icon: ShoppingOutlined
+          title: Shipping Register
+        pageId: shipping_register
+
+pages:
+  - _ref: procurement_register.yaml
+  - _ref: shipping_register.yaml
+
+  - id: welcome
+    type: PageHeaderMenu
+    properties:
+      title: Welcome
+    areas:
+      content:
+        justify: center
+        blocks:
+          - id: content_card
+            type: Card
+            style:
+              maxWidth: 800
+            blocks:
+              - id: content
+                type: Result
+                properties:
+                  title: Scatec Procurememnt Register App
+                  subTitle: This is a demo web app, developed for Scatec by Econ Cube
+                  icon:
+                    name: RightCircleOutlined
+                    color: '#f00'
+          - id: pbi_dash_card
+            type: Collapse
+            layout:
+              align: middle
+              size: 1200px
+            properties:
+              panels:
+                - disbaled: false
+                  extraKey: content_one_extra
+                  key: content_one
+                  title: Analytics Dashboard
+            areas:
+              content_one:
+                blocks:
+                  - id: pbi_dash
+                    type: Html
+                    layout:
+                      align: middle
+                    properties:
+                      html: |
+                        <iframe 
+                          id=""ytplayer_yaml_video"
+                          type="text/html"
+                          width="1380" 
+                          height="800"
+                          src="https://app.powerbi.com/view?r=eyJrIjoiOTVkZDM4NmEtZTQ1MS00YmMyLTg3NzEtOTE0MDY2MTk1YTI0IiwidCI6Ijc2MDcxN2MzLWNjNDktNDVmMS05ZTE5LTcwZjM2YmFkYWQ4ZCJ9&pageName=ReportSection1637b9dad5a7a2dfbce3"
+                          allowFullScreen="true""
+                          frameborder="12">
+                        </iframe>
+
+      footer:
+        blocks:
+          - id: footer
+            type: Paragraph
+            properties:
+              type: secondary
+              content: |
+                Made by a Lowdefy 🤖
+
