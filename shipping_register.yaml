@@ -72,12 +72,6 @@ blocks:
             - Other
         layout:
           span: 8
-      - id: date_time
-        type: DateTimeSelector
-        properties:
-          title: Date and Time
-        layout:
-          span: 8
       - id: hearder2
         type: Title
         properties:
