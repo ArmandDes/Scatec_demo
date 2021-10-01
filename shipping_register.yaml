@@ -241,11 +241,6 @@ blocks:
           title: Quantity
         layout:
           span: 8     
-
-
-
-
-
       - id: divider
         type: Divider
       - id: reset_button
