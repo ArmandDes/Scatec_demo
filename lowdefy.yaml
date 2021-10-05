@@ -35,7 +35,6 @@ menus:
           icon: ShoppingOutlined
           title: Shipping Register
         pageId: shipping_register
-
 pages:
   - _ref: procurement_register.yaml
   - _ref: shipping_register.yaml
@@ -46,49 +45,18 @@ pages:
       title: Welcome
     areas:
       content:
-        justify: center
+        justify: left
         blocks:
           - id: content
-            type: Result
+            type: Title
             properties:
-              title: Scatec Procurememnt Register App
-              subTitle: This is a demo web app, developed for Scatec by Econ Cube
-              icon:
-                name: RightCircleOutlined
-                color: '#f00'
-          - id: pbi_dash_card
-            type: Collapse
+              content: Scatec Procurememnt Register App
+          - id: image
+            type: Img
             layout:
               align: middle
-              size: 1200px
-            properties:
-              panels:
-                - disbaled: false
-                  extraKey: content_one_extra
-                  key: content_one
-                  title: Shipping Register Dashboard
-            areas:
-              content_one:
-                blocks:
-                  - id: pbi_dash_shipping
-                    type: DangerousHtml
-                    layout:
-                      align: middle
-                    properties:
-                      DOMPurifyOptions:
-                        ADD_TAGS:
-                          - iframe
-                      html: |  
-                        <iframe 
-                          id=""ytplayer_yaml_video"
-                          type="text/html"
-                          width="1380" 
-                          height="800"
-                          src="https://app.powerbi.com/view?r=eyJrIjoiOTVkZDM4NmEtZTQ1MS00YmMyLTg3NzEtOTE0MDY2MTk1YTI0IiwidCI6Ijc2MDcxN2MzLWNjNDktNDVmMS05ZTE5LTcwZjM2YmFkYWQ4ZCJ9&pageName=ReportSection1637b9dad5a7a2dfbce3"
-                          allowFullScreen="true""
-                          frameborder="12">
-                        </iframe>
-
+            properties: 
+              src: https://scatec.com/wp-content/uploads/sites/7/2021/01/vann-vind-og-sol_8.jpg        
       footer:
         blocks:
           - id: footer
@@ -96,5 +64,5 @@ pages:
             properties:
               type: secondary
               content: |
-                Made by a Lowdefy 🤖
+                Made by EconCube
 
