@@ -46,6 +46,8 @@ blocks:
           align: middle
           size: 1200px
         properties:
+          defaultActiveKey: xxxx
+          accordian: true
           panels:
             - disbaled: false
               extraKey: content_one_extra
@@ -78,6 +80,8 @@ blocks:
           align: middle
           size: 1200px
         properties:
+          defaultActiveKey: xxxx
+          accordian: true
           panels:
             - disbaled: false
               extraKey: content_one_extra
@@ -91,6 +95,13 @@ blocks:
               properties:
                 content: Enter Documentation Details # Change the title on the page.
                 level: 3 # Make the title a little smaller (an html `<h3>`).
+            - id: proj_name
+              type: TextInput
+              required: true
+              properties:
+                title: Project Name
+              layout:
+                span: 8
             - id: proj_num
               type: TextInput
               required: true
@@ -105,11 +116,11 @@ blocks:
                 title: Package Number
               layout:
                 span: 8
-            - id: batch_num
+            - id: pack_identifier
               type: TextInput
               required: true
               properties:
-                title: Batch Number
+                title: Package Identifier
               layout:
                 span: 8
             - id: order_num
@@ -345,7 +356,6 @@ blocks:
                     params: save_data
                   - id: reset # Reset the form once data has been submitted
                     type: Reset                    
-
 
   - id: content_card
     type: Card
