@@ -33,7 +33,7 @@ blocks:
       - id: page_heading
         type: Title
         properties:
-          content: Welcome to the Scatec Procurememnt Register # Change the title on the page.
+          content: Welcome55 to the Scatec Procurememnt Register # Change the title on the page.
           level: 1 # Make the title a little smaller (an html `<h3>`).
       - id: page_instructions
         type: Paragraph
