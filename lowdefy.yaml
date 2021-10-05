@@ -50,7 +50,7 @@ pages:
           - id: content
             type: Title
             properties:
-              content: Scatec Procurememnt Register App
+              content: Scatec Procurememnt Register App and logistics Dash
           - id: image
             type: Img
             layout:
