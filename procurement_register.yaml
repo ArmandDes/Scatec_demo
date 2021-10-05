@@ -432,4 +432,4 @@ blocks:
               type: Request
               params: save_data
             - id: reset # Reset the form once data has been submitted
-              type: Reset                    
+              type: Reset
