@@ -70,7 +70,7 @@ blocks:
                       type="text/html"
                       width="1380" 
                       height="850"
-                      src=
+                      src="https://app.powerbi.com/view?r=eyJrIjoiNDhhZDI3ZWUtOWFlYS00NjkwLTg5YTEtOTI2YmFjYzg1OTI0IiwidCI6Ijc2MDcxN2MzLWNjNDktNDVmMS05ZTE5LTcwZjM2YmFkYWQ4ZCJ9"
                       allowFullScreen="true""
                       frameborder="12">
                     </iframe>
