@@ -9,7 +9,7 @@ blocks:
   - id: content_card
     type: Card
     layout:
-      size: 800 # Set the size of the card so it does not fill the full screen.
+      size: 1200 # Set the size of the card so it does not fill the full screen.
       contentGutter: 16 # Make a 16px gap between all blocks in this card.
     blocks:
       - id: page_heading
@@ -34,7 +34,7 @@ blocks:
             - disbaled: false
               extraKey: content_one_extra
               key: content_one
-              title: Procurement Register Dashboard
+              title: Shipping Register Dashboard
         areas:
           content_one:
             blocks:
@@ -68,7 +68,7 @@ blocks:
             - disbaled: false
               extraKey: content_one_extra
               key: content_one
-              title: Procurement Register Data Entry
+              title: Shipping Register Data Entry
         areas:
           content_one:
             blocks:

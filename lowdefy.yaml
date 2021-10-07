@@ -62,7 +62,7 @@ pages:
           - id: footer
             type: Paragraph
             properties:
-              type: secondary
+              type: primary
               content: |
                 Made by EconCube
 
