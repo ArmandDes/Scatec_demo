@@ -93,236 +93,78 @@ blocks:
             - id: hearder1
               type: Title
               properties:
-                content: Enter Documentation Details # Change the title on the page.
+                content: Enter Project and Package Details # Change the title on the page.
                 level: 3 # Make the title a little smaller (an html `<h3>`).
+            - id: divider
+              type: Divider
+            - id: container_size
+              type: ButtonSelector
+              properties:
+                title: Stage Gate
+                options: # Set the allowed options
+                  - Technical Docs for RFP
+                  - RFP
+                  - Bids/Tenders
+                  - Supplier/Contractor
+                  - NTP/COO
+                  - Design Delivery Scatec
+                  - Design Delivery Contractor/Supplier
+                  - FIM Delivery Scatec
+                  - Scatec
+              layout:
+                span: 24
+                align: middle
+            - id: divider
+              type: Divider
             - id: proj_name
               type: TextInput
               required: true
               properties:
                 title: Project Name
               layout:
-                span: 8
+                span: 12
             - id: proj_num
               type: TextInput
               required: true
               properties:
                 title: Project Number
               layout:
-                span: 8
+                span: 12
             - id: pack_num
               type: TextInput
               required: true
               properties:
                 title: Package Number
               layout:
-                span: 8
+                span: 12
             - id: pack_identifier
               type: TextInput
               required: true
               properties:
                 title: Package Identifier
               layout:
-                span: 8
-            - id: order_num
+                span: 12
+            - id: Awarded Supplier/Contractor
               type: TextInput
               required: true
               properties:
-                title: Order Number
+                title: Awarded Supplier/Contractor
               layout:
                 span: 8
-            - id: bl_num
+            - id: buyer
               type: TextInput
               required: true
               properties:
-                title: B/L Number
+                title: Buyer
               layout:
                 span: 8
-            - id: seal_num
+            - id: packages
               type: TextInput
               required: true
               properties:
-                title: Seal Number
+                title: Packages
               layout:
                 span: 8
-            - id: sealed_indicator
-              type: ButtonSelector
-              properties:
-                title: Seal in tact
-                options: # Set the allowed options
-                  - Yes
-                  - No
-                  - Other
-              layout:
-                span: 8
-            - id: hearder2
-              type: Title
-              properties:
-                content: Enter Shipping Details # Change the title on the page.
-                level: 3 # Make the title a little smaller (an html `<h3>`).
-            - id: pol
-              type: MultipleSelector
-              required: true
-              properties:
-                title: Port of Loading
-                options:
-                  - label: Durban
-                    value: 1
-                  - label: Richards Bay
-                    value: 2
-                  - label: Port Elizabeth
-                    value: 3
-                  - label: Cape Town
-                    value: 4
-                  - label: Saldhana   
-                    value: 5                                 
-                  - label: Coega  
-                    value: 6                   
-              layout:
-                span: 8
-            - id: pol_etd
-              type: DateSelector
-              properties:
-                title: ETD at PoL
-              layout:
-                span: 8
-            - id: pol_atd
-              type: DateSelector
-              properties:
-                title: ATD at PoL
-              layout:
-                span: 8
-            - id: pod
-              type: MultipleSelector
-              required: true
-              properties:
-                title: Port of Destination
-                options:
-                  - label: Shanghai
-                    value: 1
-                  - label: Singapore
-                    value: 2
-                  - label: Rotterdam
-                    value: 3
-                  - label: Tianjin
-                    value: 4
-                  - label: Qingdao  
-                    value: 5                                  
-                  - label: Hong Kong    
-                    value: 6      
-                  - label: Busan
-                    value: 7
-                  - label: Guangzhou
-                    value: 8
-                  - label: Ningbo    
-                    value: 9                                
-                  - label: Shenzen                     
-              layout:
-                span: 8
-            - id: pod_etd
-              type: DateSelector
-              properties:
-                title: ETD at PoD
-              layout:
-                span: 8
-            - id: pod_atd
-              type: DateSelector
-              properties:
-                title: ATD at PoD
-              layout:
-                span: 8
-
-            - id: container_num
-              type: TextInput
-              required: true
-              properties:
-                title: Container Number
-              layout:
-                span: 8
-            - id: container_size
-              type: ButtonSelector
-              properties:
-                title: Container Size
-                options: # Set the allowed options
-                  - 20 ft
-                  - 40 ft
-                  - 60 ft
-              layout:
-                span: 8
-            - id: shipping_line
-              type: TextInput
-              required: true
-              properties:
-                title: Shipping Line
-              layout:
-                span: 8
-            - id: vessel_name
-              type: TextInput
-              required: true
-              properties:
-                title: Vessel Name
-              layout:
-                span: 8
-            - id: freight_forwarder
-              type: MultipleSelector
-              required: true
-              properties:
-                title: Freight Forwarder
-                options:
-                  - label: FEDEX
-                    value: 1
-                  - label: Megafreight
-                    value: 2
-                  - label: Argo Freight
-                    value: 3
-              layout:
-                span: 8
-            - id: packing_list_num
-              type: TextInput
-              required: true
-              properties:
-                title: Packing List No
-              layout:
-                span: 8
-            - id: hearder3
-              type: Title
-              properties:
-                content: Enter Material Details # Change the title on the page.
-                level: 3 # Make the title a little smaller (an html `<h3>`).
-            - id: material_description
-              type: TextInput
-              required: true
-              properties:
-                title: Material Description
-              layout:
-                span: 16
-            - id: supplier_name
-              type: TextInput
-              required: true
-              properties:
-                title: Supplier Name
-              layout:
-                span: 8
-            - id: scatec_inv_value
-              type: NumberInput
-              required: true
-              properties:
-                title: Scatec Commercial Invoice Value
-              layout:
-                span: 8
-            - id: supplier_inv_value
-              type: NumberInput
-              required: true
-              properties:
-                title: Supplier Commercial Invoice Value
-              layout:
-                span: 8     
-            - id: qty
-              type: NumberInput
-              required: true
-              properties:
-                title: Quantity
-              layout:
-                span: 8     
             - id: divider
               type: Divider
             - id: reset_button
